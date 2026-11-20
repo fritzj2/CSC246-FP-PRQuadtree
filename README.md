@@ -1,32 +1,39 @@
 # CSC246-FP-PRQuadtree
 This repository is built for the Berea College CSC 246 final project. This is a codewars problem that is built around the PRQuadtrees data structure.
 
-# Project Title
+# Hitmans Coordinate Tracker
 
 ## Authors
 
- - name 1 (with optional link to github profiles)
- - name 2 (with optional link to github profiles)
- - name 3 (with optional link to github profiles)
+ - Julius Fritz (https://github.com/fritzj2)
+ - Dustan Webb (https://github.com/Dwebb28-CS)
+ - Rafael Hermoza (https://github.com/RafaelHermoza)
 
 ## Project Statement
 
-Project statement should be here.
+A hitman has a way to track its next targets. The hitmen need to have fast access to nodes and adding new people into the list. For this reason, the hitmen are using a Point Relation Quadtree (or PR-Quadtree) to store the information about each of their targets. They have to figure out how to remove one person (a node) from the given PR-Quadtree.
 
 ![sample image](sample-image.png "Sample Image")
  
 ## Examples
 
-put 2-3 small examples here
+Given the tree: node -> [empty_node, node, empty_node, person], remove person
+In this situation the tree would return: node -> [empty_node, node, empty_node, empty_node]
+
+Given the tree: node -> [node, node, node, further_node] -> [empty, empty, person, removal], remove removal
+In this sitution the tree would return node -> node -> [node, node, node, person] as the further_node is consolidated.
+
+Given the tree: person, remove person
+In this situation the function would return `Null` as there is no one left in the tree
 
 
 ### Example 1:
 
-**Input:** `nums = [2,7,11,15]`, `target = 9`
+**Input:** `PrTreeNode root`, `PrTreeNode target`
 
-**Output:** `[0,1]`
+**Output:** `PrTreeNode root_without_target`
 
-**Explanation:** Because `nums[0] + nums[1] == 9`, we return `[0, 1]`.
+**Explanation:** Using the coordinates present in the target, the root can be traversed to find the target Node.
 
 ## Constraints
 
