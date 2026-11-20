@@ -120,5 +120,4 @@ To deepen understanding of (add project topic here) see [Add title of Video here
 
 ## References (for all ideas not our own)
 
-- [GeeksForGeeks]((https://www.geeksforgeeks.org/dsa/quad-tree/))
-
+- [GeeksForGeeks](https://www.geeksforgeeks.org/dsa/quad-tree/)
