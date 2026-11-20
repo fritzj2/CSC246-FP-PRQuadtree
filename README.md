@@ -94,9 +94,11 @@ class Solution {
 
 ### Test Case 1
 
-`nums = [2,7,11,15]`
+`node -> [empty_node, node, empty_node, person], remove person`
 
-`target = 9`
+`target = person`
+
+`return node -> [empty_node, node, empty_node, empty_node]`
 
 ## Solutions
 

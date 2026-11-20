@@ -50,5 +50,11 @@ public class Quad {
         topLeft = topL;
         botRight = botR;
     }
-        
+    public boolean inBoundary(Point p) {
+        if ((p.x >= topLeft.x && p.x <= botRight.x) &&
+            (p.y >= botRight.y && p.y <= topLeft.y)) {
+            return true;
+        }
+        return false;
+    }
 }
