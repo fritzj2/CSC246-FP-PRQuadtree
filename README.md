@@ -5,7 +5,7 @@ This repository is built for the Berea College CSC 246 final project. This is a 
 
 ## Authors
 
- - Julius Fritz (https://github.com/fritzj2)
+ - [Julius Fritz](https://github.com/fritzj2)
  - Dustan Webb (https://github.com/Dwebb28-CS)
  - Rafael Hermoza (https://github.com/RafaelHermoza)
 
@@ -37,25 +37,53 @@ In this situation the function would return `Null` as there is no one left in th
 
 ## Constraints
 
-- Constraint 1
-- Constraint 2
+- In order to delete a node, you must set the node itself to `Null`
 
 
 ### Topics
 
-- binary tree
-- depth first search
+- pr quadtrees
+- recursion
+- trees
+- tree node deletion
 
 ### Level
 
-- Easy
+- medium
 
 ## Code (stub to show parameters, return type, and definitions)
 
 ```java
 // put your Java stub code here
+class Point {
+    int x, y;
+    Point(int _x, int _y){
+        x = _x;
+        y = _y;
+    }
+}
+
+class Node {
+    Point pos;
+    String target;
+    Node(Point position, String person){
+        pos = position;
+        target = person;
+    }
+}
+
+public class Quad {
+    Point topLeft;
+    Point botRight;
+    Node root;
+    Quad topLeftTree;
+    Quad topRightTree;
+    Quad botLeftTree;
+    Quad botRightTree;
+}
+
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
+    public Node delete_node(Node root, Node target) {
         // code here
 
     }
@@ -90,5 +118,5 @@ To deepen understanding of (add project topic here) see [Add title of Video here
 
 ## References (for all ideas not our own)
 
-- [Reference 1](link to reference 1)
+- [GeeksForGeeks]((https://www.geeksforgeeks.org/dsa/quad-tree/))
 
